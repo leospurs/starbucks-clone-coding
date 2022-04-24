@@ -1,4 +1,4 @@
-# starbucks-clone-coding
+# Starbucks-clone-coding
 > Front-end 기술 습득을 위한 클론 코딩
 
 ## 기술 스텍
