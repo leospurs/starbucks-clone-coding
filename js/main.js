@@ -39,7 +39,7 @@ window.addEventListener('scroll', _.throttle(function () {
 // _.throttle(함수, 시간(밀리세컨드 단위로));
 // gsap.to(요소, 지속시간, 옵션);
 
-
+// 새로고침 시 visual 영역 이미지를 순차적으로 노출시키는 함수
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 fadeEls.forEach(function(fadeEl, index) {
     gsap.to(fadeEl, 1, {
@@ -47,3 +47,11 @@ fadeEls.forEach(function(fadeEl, index) {
         opacity: 1 
     });
 });
+
+// notice의 슬라이드 기능 함수
+new Swiper('.notice-line .swiper-container', {
+    direction: 'vertical',
+    autoplay: true,
+    loop: true
+});
+
